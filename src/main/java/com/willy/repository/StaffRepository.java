@@ -9,5 +9,5 @@ import java.util.Set;
 
 @Repository
 public interface StaffRepository extends JpaRepository<Staff, Integer> {
-
+//
 }
