@@ -1,0 +1,16 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/spring?serverTimezone=GMT%2B8&useSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: ENC(lkYPR0jBZRijyq4VP0rRiaVM6vNB5CT+3fwEYGp7a5PDo7BFGlsu6IfhZGHVqtDJ)
+  jpa:
+    show-sql: true
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
+
+jasypt:
+  encryptor:
+    password: ${JASYPT_ENCRYPTOR_PASSWORD}
+
